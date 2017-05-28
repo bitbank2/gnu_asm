@@ -35,7 +35,7 @@ void *ihandle, *ohandle;
 #ifndef FALSE
 typedef int BOOL;
 #define FALSE 0
-#define TRUE 0
+#define TRUE 1
 #endif
 
 int PreParseLine(char *pSrc, int *iOff, int iSize, char *pDest)
