@@ -1,0 +1,19 @@
+*** GNU_ASM ***
+
+GNU_ASM is a C command line tool for converting  Microsoft-style assembly language
+source files into GAS (GNU Assembler) format. It takes a single parameter - the
+filename and creates a new .s file in the same directory. The original purpose of
+the tool was to speed up porting of my Windows CE ARM asm projects to Android. 
+The Raspberry Pi uses the same format, so that is its latest use for me. It has
+been tested with a bunch of my projects, but is probably missing some feature that
+someone uses and I haven't. It converts keywords, label style and comments in a
+non-destructive way. If it can't get your project 100% converted, it should at
+least get you 99% of the way there and save you a lot of time in the process.
+
+I started this several years ago for WinCE and recently needed it again for some
+Raspberry Pi projects, and this inspired me to release it as open source. Feel
+free to email me if you have any questions/bugs/suggestions.
+
+Copyright (c) 2012-2017 Larry Bank
+bitbank@pobox.com
+
